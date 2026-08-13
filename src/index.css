@@ -3,7 +3,7 @@
 /* ---------------------------------- base ---------------------------------- */
 
 :root {
-  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
 html {
@@ -665,5 +665,14 @@ input.timeline::-moz-range-thumb {
   }
   .era-in {
     animation: erain 0.3s ease both;
+  }
+}
+
+@media (pointer: coarse) {
+  .kenburns {
+    animation-duration: 16s;
+  }
+  .marquee-track {
+    animation-duration: 24s;
   }
 }
